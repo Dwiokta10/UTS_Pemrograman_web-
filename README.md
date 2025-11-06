@@ -26,3 +26,47 @@ Seluruh data disimpan menggunakan variabel JavaScript dalam format Array JSON (t
 5. Mengembangkan kreativitas dan kemampuan analisis logika dalam menyusun alur aplikasi, membangun interaksi antarhalaman, serta menampilkan data secara menarik dan mudah dipahami.
 
 6. Menunjukkan pemahaman menyeluruh terhadap konsep front-end web development, mulai dari struktur HTML, desain CSS, hingga manipulasi DOM menggunakan JavaScript secara terintegrasi.
+
+## Fitur-Fitur Aplikasi Web
+1. Halaman Login (index.html)
+Input Email dan Password dengan validasi menggunakan JavaScript.
+Jika data salah muncul alert: “Email/Password yang anda masukkan salah”.
+Tersedia tombol “Lupa Password” dan “Daftar” dalam bentuk modal box (popup).
+
+### Data Pengguna
+Aplikasi ini memiliki tiga pengguna simulasi yang disimpan di file data.js:
+
+```
+var dataPengguna = [
+  { id: 1, nama: "Rina Wulandari", email: "rina@gmail.com", password: "rina123", role: "User" },
+  { id: 2, nama: "Agus Pranoto", email: "agus@gmail.com", password: "agus123", role: "User" },
+  { id: 3, nama: "Siti Marlina", email: "siti@gmail.com", password: "siti123", role: "Admin" }
+];
+```
+
+Penjelasan:
+Rina Wulandari dan Agus Pranoto berperan sebagai User.
+Mereka bisa login untuk melihat katalog buku, melakukan pemesanan, dan melacak status pesanan mereka.
+Siti Marlina berperan sebagai Admin,
+yang memiliki akses tambahan seperti menambah data buku baru atau mengelola stok buku di halaman stok.html.
+Data login ini menjadi dasar validasi pada halaman index.html, di mana JavaScript akan memeriksa apakah kombinasi email dan password cocok dengan data yang tersimpan.
+
+3. Dashboard Menu (dashboard.html)
+Menampilkan greeting otomatis sesuai waktu (Selamat Pagi/Siang/Sore).
+Menu navigasi ke halaman Stok Buku, Tracking Pengiriman, Laporan, dan History Transaksi.
+
+4. Informasi Stok / Katalog (stok.html)
+Menampilkan data dari dataKatalogBuku dalam file data.js.
+Fitur Tambah Stok Baru menggunakan JavaScript DOM yang memperbarui tabel secara dinamis.
+
+5. Halaman Pemesanan (checkout.html)
+Pengguna dapat mengisi data pemesan (nama, alamat, metode pembayaran).
+Fitur edit dan hapus data pesanan secara langsung di tabel.
+Validasi input untuk memastikan data tidak kosong, disertai alert feedback.
+
+6. Informasi Pengiriman (tracking.html)
+Input Nomor Delivery Order untuk melacak pesanan.
+Menampilkan:
+Nama Pemesan
+Status Pengiriman (disimulasikan dengan progress bar dan warna)
+Detail ekspedisi, tanggal kirim, jenis paket, total pembayaran.
