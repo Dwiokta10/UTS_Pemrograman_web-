@@ -1,4 +1,4 @@
-# Projek UTS Pemrograman_web
+# Projek UTS Pemrograman_web Semester 3
 |                |                    |
 | -------------- | ------------------ |
 |      _Nama_    | Dwi Okta Ramadhani |
