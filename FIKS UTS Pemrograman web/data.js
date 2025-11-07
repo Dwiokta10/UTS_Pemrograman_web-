@@ -30,7 +30,7 @@ var dataKatalogBuku = [
         edisi: "2",
         stok: 548,
         harga: "Rp 180.000",
-        cover: "img/pengantar_komunikasi.jpg"
+        cover: "img/Pengantar Ilmu Komunikasi.jpg"
     },
     {
         kodeBarang: "EKMA4002",
@@ -39,7 +39,7 @@ var dataKatalogBuku = [
         edisi: "3",
         stok: 392,
         harga: "Rp 220.000",
-        cover: "img/manajemen_keuangan.jpg"
+        cover: "img/Manajemen Keuangan.jpg"
     },
     {
         kodeBarang: "EKMA4310",
@@ -57,7 +57,7 @@ var dataKatalogBuku = [
         edisi: "2",
         stok: 165,
         harga: "Rp 200.000",
-        cover: "img/mikrobiologi.jpg"
+        cover: "img/Mikrobiologi Dasar.jpg"
     },
     {
         kodeBarang: "PAUD4401",
@@ -66,7 +66,7 @@ var dataKatalogBuku = [
         edisi: "4",
         stok: 204,
         harga: "Rp 250.000",
-        cover: "img/paud_perkembangan.jpg"
+        cover: "img/Perkembangan Anak Usia Dini.jpg"
     }
 ];
 
@@ -76,8 +76,6 @@ var dataTracking = {
         nama: "Rina Wulandari",
         status: "Dalam Perjalanan",
         ekspedisi: "JNE",
-        nomorResi: "JNE-TSL-20250825-0012",
-        berat: "1.2 kg",
         tanggalKirim: "2025-08-25",
         paket: "0JKT01",
         total: "Rp 180.000",
@@ -87,12 +85,11 @@ var dataTracking = {
                 keterangan: "Penerimaan di Loket: TANGERANG SELATAN. Pengirim: Universitas Terbuka"
             },
             {
-                // perbaikan format tanggal dari '2025-08 25' -> '2025-08-25'
                 waktu: "2025-08-25 14:07:56",
                 keterangan: "Tiba di Hub: TANGERANG SELATAN"
             },
             {
-                waktu: "2025-08-25 18:12:20",
+                waktu: "2025-08-25 10:12:20",
                 keterangan: "Diteruskan ke Kantor Jakarta Selatan"
             },
         ]
@@ -102,36 +99,16 @@ var dataTracking = {
         nama: "Agus Pranoto",
         status: "Dikirim",
         ekspedisi: "Pos Indonesia",
-        nomorResi: "POS-BDG-20250826-0013",
-        berat: "0.9 kg",
         tanggalKirim: "2025-08-25",
         paket: "0UPBJJBDG",
         total: "Rp 220.000",
         perjalanan:[
-            {
-                waktu: "2025-08-25 10:12:20",
-                keterangan: "Penerimaan di Loket: TANGERANG SELATAN. Pengirim: Universitas Terbuka"
-            },
-            {
-                waktu: "2025-08-25 14:07:56",
-                keterangan: "Tiba di Hub: TANGERANG SELATAN"
-            },      
-            {
-                waktu: "2025-08-25 16:30:10",
-                keterangan: "Diteruskan ke Kantor Kota Bandung"
-            },
-            {
-                waktu: "2025-08-26 12:15:33",
-                keterangan: "Tiba di Hub: Kota BANDUNG"
-            },
-            {
-                waktu: "2025-08-26 15:06:12",
-                keterangan: "Proses antar ke Cimahi"
-            },
-            {
-                waktu: "2025-08-26 20:00:00",
-                keterangan: "Selesai Antar. Penerima: Agus Pranoto"
-            }
+            { waktu: "2025-08-25 10:12:20", keterangan: "Penerimaan di Loket: TANGERANG SELATAN. Pengirim: Universitas Terbuka" },
+            { waktu: "2025-08-25 14:07:56", keterangan: "Tiba di Hub: TANGERANG SELATAN" },
+            { waktu: "2025-08-25 16:30:10", keterangan: "Diteruskan ke Kantor Kota Bandung" },
+            { waktu: "2025-08-26 12:15:33", keterangan: "Tiba di Hub: Kota BANDUNG" },
+            { waktu: "2025-08-26 15:06:12", keterangan: "Proses antar ke Cimahi" },
+            { waktu: "2025-08-26 20:00:00", keterangan: "Selesai Antar. Penerima: Agus Pranoto" }
         ]
     }
 };
