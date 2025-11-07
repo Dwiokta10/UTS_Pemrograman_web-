@@ -35,7 +35,6 @@ Tersedia tombol “Lupa Password” dan “Daftar” dalam bentuk modal box (pop
 
 ### Data Pengguna
 Aplikasi ini memiliki tiga pengguna simulasi yang disimpan di file data.js:
-
 ```
 var dataPengguna = [
   { id: 1, nama: "Rina Wulandari", email: "rina@gmail.com", password: "rina123", role: "User" },
