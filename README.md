@@ -69,3 +69,7 @@ Menampilkan:
 Nama Pemesan
 Status Pengiriman (disimulasikan dengan progress bar dan warna)
 Detail ekspedisi, tanggal kirim, jenis paket, total pembayaran.
+
+## Kesimpulan
+Dari pembuatan website ini, Saya jadi lebih paham gimana cara kerja dasar dari sebuah aplikasi web. Proyek UTS ini bukan cuma tentang menulis kode HTML, CSS, dan JavaScript, tapi juga belajar menyatukan semuanya jadi satu tampilan yang menarik dan bisa digunakan dengan baik.
+selama prosesnya, saya belajar menyusun struktur HTML yang rapi dan semantik, mendesain tampilan supaya responsif dan enak dilihat, serta menggunakan JavaScript DOM untuk bikin elemen di halaman bisa berubah secara dinamis. Saya juga belajar bikin validasi form, menampilkan alert dan pop-up, jadi pengguna bisa tahu kalau ada data yang salah atau berhasil dikirim.
