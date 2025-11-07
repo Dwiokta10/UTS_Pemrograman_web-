@@ -8,7 +8,6 @@
   function setError(input, msg){
     if(!input) return; input.classList.add('invalid');
     let s = input.nextElementSibling; if(!(s && s.classList && s.classList.contains('error-text'))){ s = document.createElement('small'); s.className='error-text'; input.after(s) }
-    // ensure unique id for aria-describedby
     if(!s.id){ s.id = input.id ? input.id + '-error' : 'err-' + Math.random().toString(36).slice(2,7) }
     input.setAttribute('aria-invalid','true'); input.setAttribute('aria-describedby', s.id);
     s.textContent = msg || 'Input tidak valid';
@@ -65,12 +64,11 @@
             + '<td class="currency">'+intToRupiah(o.total)+'</td>'
             + '<td class="actions"><button class="btn btn-primary" data-act="save">Edit</button><button class="btn btn-outline" data-act="delete">Hapus</button></td>';
           tbody.appendChild(tr);
-          // Attach handlers
           tr.querySelector('[data-act="save"]').addEventListener('click', ()=>{
             const qty = parseInt(tr.querySelector('[data-act="qty"]').value||'1');
             const method = tr.querySelector('[data-act="method"]').value;
             const all = load();
-            const realIndex = all.length-1-idx; // because reversed
+            const realIndex = all.length-1-idx;
             const item = all[realIndex];
             const buku = (window.dataKatalogBuku||[]).find(b=>b.namaBarang===item.buku)
             const price = buku ? rupiahToInt(buku.harga) : Math.round(item.subtotal/(item.qty||1));
@@ -184,7 +182,15 @@
       $('#oTotal').textContent = intToRupiah(subtotal)
       if($('#oFee')) $('#oFee').textContent = intToRupiah(fee)
       if($('#oGrand')) $('#oGrand').textContent = intToRupiah(grand)
-      $('#ringkasan').innerHTML = '<div class="badge">Item</div><div class="mt-2"><strong>'+(item.namaBarang||'-')+'</strong> × '+qty+'<br>Harga satuan: '+item.harga+'<br>Metode: '+pay.toUpperCase()+'</div>'
+      $('#ringkasan').innerHTML = '<div class="badge">Item</div>'
+        + '<div class="mt-2" style="display:flex; gap:12px; align-items:flex-start">'
+        +   '<img src="'+((item.cover)||'img/placeholder.svg')+'" alt="cover" width="80" height="110" style="object-fit:cover; border-radius:6px" onerror="this.onerror=null;this.src=\'img/placeholder.svg\'">'
+        +   '<div>'
+        +     '<strong>'+(item.namaBarang||'-')+'</strong> × '+qty+'<br>'
+        +     'Harga satuan: '+(item.harga||'Rp 0')+'<br>'
+        +     'Metode: '+pay.toUpperCase()
+        +   '</div>'
+        + '</div>'
     }
     select.addEventListener('change', updateTotal); $('#oQty').addEventListener('input', updateTotal); const oPay=$('#oPay'); if(oPay){ oPay.addEventListener('change', updateTotal) } updateTotal()
     $('#formOrder').addEventListener('submit', function(e){
@@ -198,7 +204,6 @@
       if(!ok){ show($('#orderError')); return } else { hide($('#orderError')) }
       const idx = parseInt(select.value||'0');
       const item = (window.dataKatalogBuku||[])[idx]||{};
-      
       const subtotal = rupiahToInt(item.harga||'0')*qty;
       const method = ($('#oPay') && $('#oPay').value) || 'transfer';
       const fee = calcFee(subtotal, method);
