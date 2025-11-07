@@ -33,6 +33,8 @@ Input Email dan Password dengan validasi menggunakan JavaScript.
 Jika data salah muncul alert: “Email/Password yang anda masukkan salah”.
 Tersedia tombol “Lupa Password” dan “Daftar” dalam bentuk modal box (popup).
 
+<img width="1651" height="642" alt="login" src="https://github.com/user-attachments/assets/6eab55c3-bd93-4754-bbf1-5f238c00db1e" />
+
 ### Data Pengguna
 Aplikasi ini memiliki tiga pengguna simulasi yang disimpan di file data.js:
 ```
@@ -50,25 +52,42 @@ Siti Marlina berperan sebagai Admin,
 yang memiliki akses tambahan seperti menambah data buku baru atau mengelola stok buku di halaman stok.html.
 Data login ini menjadi dasar validasi pada halaman index.html, di mana JavaScript akan memeriksa apakah kombinasi email dan password cocok dengan data yang tersimpan.
 
-3. Dashboard Menu (dashboard.html)
+2. Dashboard Menu (dashboard.html)
 Menampilkan greeting otomatis sesuai waktu (Selamat Pagi/Siang/Sore).
 Menu navigasi ke halaman Stok Buku, Tracking Pengiriman, Laporan, dan History Transaksi.
 
-4. Informasi Stok / Katalog (stok.html)
+
+<img width="1919" height="867" alt="halaman selanjutnya" src="https://github.com/user-attachments/assets/03893a89-5b62-406b-b061-1a515f684ba5" />
+
+
+3. Informasi Stok / Katalog (stok.html)
 Menampilkan data dari dataKatalogBuku dalam file data.js.
 Fitur Tambah Stok Baru menggunakan JavaScript DOM yang memperbarui tabel secara dinamis.
 
-5. Halaman Pemesanan (checkout.html)
+
+<img width="1093" height="1006" alt="stok" src="https://github.com/user-attachments/assets/89ba3a57-64fc-42a5-8a84-2f4dca8b8138" />
+
+
+4. Halaman Pemesanan (checkout.html)
 Pengguna dapat mengisi data pemesan (nama, alamat, metode pembayaran).
 Fitur edit dan hapus data pesanan secara langsung di tabel.
 Validasi input untuk memastikan data tidak kosong, disertai alert feedback.
 
-6. Informasi Pengiriman (tracking.html)
+
+<img width="1912" height="1104" alt="cekout" src="https://github.com/user-attachments/assets/7a1cc60c-8917-4d0f-a294-4f5a05ffd37b" />
+
+
+5. Informasi Pengiriman (tracking.html)
 Input Nomor Delivery Order untuk melacak pesanan.
-Menampilkan:
-Nama Pemesan
-Status Pengiriman (disimulasikan dengan progress bar dan warna)
-Detail ekspedisi, tanggal kirim, jenis paket, total pembayaran.
+
+
+<img width="1905" height="1122" alt="pengiriman" src="https://github.com/user-attachments/assets/d93a52b5-0d28-4a89-b5d2-c81d594dc04b" />
+
+
+6. History fasilitas untuk mencatat dan menyimpan data
+
+<img width="1915" height="1051" alt="histori" src="https://github.com/user-attachments/assets/7c0cea44-054e-43f4-9d6f-3749deab2ad2" />
+
 
 ## Kesimpulan
 Dari pembuatan website ini, Saya jadi lebih paham gimana cara kerja dasar dari sebuah aplikasi web. Proyek UTS ini bukan cuma tentang menulis kode HTML, CSS, dan JavaScript, tapi juga belajar menyatukan semuanya jadi satu tampilan yang menarik dan bisa digunakan dengan baik.
