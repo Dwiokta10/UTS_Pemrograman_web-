@@ -6,7 +6,7 @@
 |     _Kelas_    |      TI.24.A1      |
 |  _Mata Kuliah_ | Pemrograman Web 1  |
 | _Dosen Pengampu_ | Bapak Agung Nugroho, S.Kom., M.Kom. |
-|  _Youtube_ | ..................|
+|  _Youtube_ | https://youtu.be/Ger3SVEW93c |
 
 ## Deskripsi
 Proyek ini merupakan tugas Ujian Tengah Semester pada mata kuliah Pemrograman Web 1 dengan tujuan untuk mengimplementasikan kemampuan mahasiswa dalam membangun aplikasi web front-end interaktif menggunakan HTML, CSS, dan JavaScript DOM.
